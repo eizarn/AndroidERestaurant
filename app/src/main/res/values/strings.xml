@@ -3,6 +3,11 @@
     <string name="home_restaurantName">OM NOM NOM</string>
     <string name="home_logoName">le chef</string>
     <string name="title_activity_produits">ProduitsActivity</string>
+    <string-array name="dishes">
+        <item> Plat 1 </item>
+        <item> Plat 2 </item>
+        <item> Plat 3 </item>
+    </string-array>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

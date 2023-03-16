@@ -1,10 +1,12 @@
 package fr.isen.izarn.androiderestaurant
 
 import android.os.Bundle
+import android.widget.Toast
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import fr.isen.izarn.androiderestaurant.databinding.ActivityProduitsBinding
 
 class ProduitsActivity : AppCompatActivity() {
@@ -17,11 +19,10 @@ class ProduitsActivity : AppCompatActivity() {
         binding = ActivityProduitsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        val dishes = resources.getStringArray(R.array.dishes).toList()
+        binding.categoryRecyclerView.layoutManager = LinearLayoutManager(this) //les éléments vont s'ordonnancer de manière linéaire
+        binding.categoryRecyclerView.adapter = CategoryAdapter(dishes as ArrayList<String>) {
+            Toast.makeText(this, it, Toast.LENGTH_LONG).show()
         }
     }
 }
