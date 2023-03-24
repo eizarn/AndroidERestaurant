@@ -3,11 +3,21 @@
     <string name="home_restaurantName">OM NOM NOM</string>
     <string name="home_logoName">le chef</string>
     <string name="title_activity_produits">ProduitsActivity</string>
-    <string-array name="dishes">
-        <item> Plat 1 </item>
-        <item> Plat 2 </item>
-        <item> Plat 3 </item>
+
+    <string-array name="starters">
+        <item> salade </item>
+        <item> saucisson </item>
     </string-array>
+    <string-array name="main_courses">
+        <item> (rest in) pepperoni </item>
+        <item> cat food </item>
+        <item> spaghetti code </item>
+    </string-array>
+    <string-array name="desserts">
+        <item> crème brûlée </item>
+        <item> glace au chocolat </item>
+    </string-array>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

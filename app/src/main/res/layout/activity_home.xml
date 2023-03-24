@@ -25,9 +25,10 @@
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.79"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintVertical_bias="0.79">
 
         <Button
             android:id="@+id/button_entrees"
@@ -35,7 +36,10 @@
             android:layout_height="79dp"
             android:background="@android:color/transparent"
             android:foreground="@drawable/entrees"
-            android:onClick="on_button_entrees_click" />
+            android:onClick="on_button_entrees_click"
+            android:text="starters"
+            android:textColor="@android:color/transparent"
+            tools:text="starters" />
 
         <Button
             android:id="@+id/button_plats"
@@ -43,7 +47,10 @@
             android:layout_height="74dp"
             android:background="@android:color/transparent"
             android:foreground="@drawable/plats"
-            android:onClick="on_button_plats_click" />
+            android:onClick="on_button_plats_click"
+            android:text="main courses"
+            android:textColor="@android:color/transparent"
+            tools:text="main courses" />
 
         <Button
             android:id="@+id/button_desserts"
@@ -52,14 +59,16 @@
             android:background="@android:color/transparent"
             android:foreground="@drawable/desserts"
             android:onClick="on_button_desserts_click"
+            android:text="desserts"
             android:textAlignment="center"
-            android:textColor="#F7FF00"
+            android:textColor="@android:color/transparent"
             android:textColorHighlight="#FFFFFF"
             android:textColorHint="#FFFAFA"
             android:textSize="24sp"
             app:backgroundTint="#00FFFFFF"
             app:backgroundTintMode="add"
-            app:iconTint="@android:color/transparent" />
+            app:iconTint="@android:color/transparent"
+            tools:text="desserts" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

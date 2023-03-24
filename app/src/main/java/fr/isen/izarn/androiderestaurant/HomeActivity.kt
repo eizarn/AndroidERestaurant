@@ -2,6 +2,7 @@ package fr.isen.izarn.androiderestaurant
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -18,6 +19,12 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(R.layout.`activity_home`)
+    }
+
+    override fun onDestroy() {
+        TODO("Make this a log rather than a toast")
+        Toast.makeText(this, "Your home? It was, and it was beautiful.", Toast.LENGTH_LONG).show()
+        super.onDestroy()
     }
 
     public fun on_button_entrees_click(v: View) {
