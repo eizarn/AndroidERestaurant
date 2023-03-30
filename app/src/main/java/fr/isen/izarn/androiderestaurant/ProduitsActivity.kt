@@ -40,6 +40,8 @@ class ProduitsActivity : AppCompatActivity() {
             Toast.makeText(this, dishName, Toast.LENGTH_LONG).show()
             intent.putExtra("dish", dishName)
         }
+
+        getDishFromServer() // TODO: figure this out
     }
 
     private fun getDishFromServer() {
